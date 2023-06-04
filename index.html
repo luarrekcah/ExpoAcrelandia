@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <title>ExpoAcrelândia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica&display=swap">
   <style>
     body {
@@ -26,7 +27,9 @@
     }
 
     img {
-      width: 15rem;
+      width: 100%;
+      max-width: 15rem;
+      height: auto;
     }
 
     a {
@@ -39,6 +42,12 @@
       padding: 1rem;
       text-align: center;
       color: #0B6235;
+    }
+
+    @media (max-width: 600px) {
+      img {
+        max-width: 10rem;
+      }
     }
   </style>
 </head>
