@@ -2,95 +2,877 @@
 <html lang="pt-BR">
 
 <head>
-  <title>ExpoAcrelândia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica&display=swap">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      background-color: #0B6235;
-      font-family: 'Geologica', serif;
-      color: #fff;
-      margin: 0;
-    }
 
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1;
-    }
+  <meta charset="UTF-8">
+  <meta name="description" content="Vem aí, expo acrelândia!">
+  <meta name="keywords" content="expo, acrelândia, evento, agro, country, tech">
+  <meta name="author" content="Agência Gênios & ColorLib">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    img {
-      width: 100%;
-      max-width: 15rem;
-      height: auto;
-    }
+  <title>Expo Acrelândia - Evento Country</title>
 
-    a {
-      color: #fff;
-    }
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    footer {
-      background-color: #fff;
-      width: 100%;
-      padding: 1rem;
-      text-align: center;
-      color: #0B6235;
-    }
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/et-line.css" rel="stylesheet">
+  <link href="css/ionicons.min.css" rel="stylesheet">
 
-    @media (max-width: 600px) {
-      img {
-        max-width: 10rem;
-      }
-    }
-  </style>
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <link href="css/main.css" rel="stylesheet">
+  <script defer referrerpolicy="origin" src="js/s.js"></script>
+  <script
+    nonce="fa9beeff-948d-4009-8a8b-4cf5bbcf1a80">(function (w, d) { !function (dK, dL, dM, dN) { dK[dM] = dK[dM] || {}; dK[dM].executed = []; dK.zaraz = { deferred: [], listeners: [] }; dK.zaraz.q = []; dK.zaraz._f = function (dO) { return function () { var dP = Array.prototype.slice.call(arguments); dK.zaraz.q.push({ m: dO, a: dP }) } }; for (const dQ of ["track", "set", "debug"]) dK.zaraz[dQ] = dK.zaraz._f(dQ); dK.zaraz.init = () => { var dR = dL.getElementsByTagName(dN)[0], dS = dL.createElement(dN), dT = dL.getElementsByTagName("title")[0]; dT && (dK[dM].t = dL.getElementsByTagName("title")[0].text); dK[dM].x = Math.random(); dK[dM].w = dK.screen.width; dK[dM].h = dK.screen.height; dK[dM].j = dK.innerHeight; dK[dM].e = dK.innerWidth; dK[dM].l = dK.location.href; dK[dM].r = dL.referrer; dK[dM].k = dK.screen.colorDepth; dK[dM].n = dL.characterSet; dK[dM].o = (new Date).getTimezoneOffset(); if (dK.dataLayer) for (const dX of Object.entries(Object.entries(dataLayer).reduce(((dY, dZ) => ({ ...dY[1], ...dZ[1] })), {}))) zaraz.set(dX[0], dX[1], { scope: "page" }); dK[dM].q = []; for (; dK.zaraz.q.length;) { const d_ = dK.zaraz.q.shift(); dK[dM].q.push(d_) } dS.defer = !0; for (const ea of [localStorage, sessionStorage]) Object.keys(ea || {}).filter((ec => ec.startsWith("_zaraz_"))).forEach((eb => { try { dK[dM]["z_" + eb.slice(7)] = JSON.parse(ea.getItem(eb)) } catch { dK[dM]["z_" + eb.slice(7)] = ea.getItem(eb) } })); dS.referrerPolicy = "origin"; dS.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dK[dM]))); dR.parentNode.insertBefore(dS, dR) };["complete", "interactive"].includes(dL.readyState) ? zaraz.init() : dK.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
 </head>
 
 <body>
-  <main>
-    <div style="margin-bottom: 1rem">
-      <img src="/images/LOGO.png" alt="ExpoAcrelândia">
-    </div>
-    <div>
-      <h1>Datas</h1>
-      <p>29 à 30 de <b>Junho</b> - 01 à 02 de <b>Julho</b></p>
-      <p>Acompanhe nosso Instagram <a href="https://instagram.com/expoacrelandia"><b>Oficial</b></a></p>
-    </div>
-    <div>
-      <h1>O que vai ter na ExpoAcrelândia?</h1>
-      <p>Rodeios, Exposição de Animais, Expositores de Produtos Regionais, Praça de Alimentação, Parque de Diversões,
-        Palestras e MUITA MÚSICA.</p>
-    </div>
-    <div>
-      <h1>👑 Concurso Rainha 👑</h1>
-      <p>👑 Rainha <a href="https://www.instagram.com/paola_eliomara/">Paola Eliomara</a></p>
-      <p>👑 Princesa <a href="https://www.instagram.com/romilla_estefany_/">Romilla Estefany</a></p>
-      <p>👑 Madrinha <a href="https://www.instagram.com/anapaalla123/">Ana Paula</a></p>
-    </div>
+  <div class="loader">
+    <div class="loader-outter"></div>
+    <div class="loader-inner"></div>
+  </div>
 
-    <div>
-      <h1>PREMIAÇÃO - RODEIO</h1>
-      <ul>
-        <li>1° LUGAR - R$ 6.000,00</li>
-        <li>2° LUGAR - R$ 4.000,00</li>
-        <li>3° LUGAR - R$ 2.000,00</li>
-        <li>4° LUGAR - R$ 1.000,00</li>
-        <li>5° LUGAR - R$ 500,00</li>
+  <header class="header navbar fixed-top navbar-expand-md">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">
+        <img src="images/logo.png" alt="Evento">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="lnr lnr-text-align-right"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+        <ul class=" nav navbar-nav menu">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#concurso-rainha">Concurso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#cantores">Cantores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#programacao">Programação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="https://sticker.ly/s/M8A059">Stickers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="https://www.instagram.com/expoacrelandia/">Instagram</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="home" class="home-cover">
+    <div class="cover_slider owl-carousel owl-theme">
+      <div class="cover_item" style="background: url(&#x27;images/background-toro.jpg&#x27;);">
+        <div class="slider_content">
+          <div class="slider-content-inner">
+            <div class="container">
+              <div class="slider-content-center">
+                <h2 class="cover-title">
+                  Se prepare para a
+                </h2>
+                <strong class="cover-xl-text" style="font-size: 70px;">Expo Acrelândia</strong>
+                <p class="cover-date">
+                  29 e 30 de Junho - 01 e 02 de Julho
+                </p>
+                <a href="https://www.instagram.com/expoacrelandia/" class=" btn btn-primary btn-rounded">
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cover_item" style="background: url(&#x27;images/background-toro.jpg&#x27;);">
+        <div class="slider_content">
+          <div class="slider-content-inner">
+            <div class="container">
+              <div class="slider-content-left">
+                <h2 class="cover-title">
+                  Compre agora mesmos os
+                </h2>
+                <strong class="cover-xl-text">INGRESSOS</strong>
+                <p class="cover-date">
+                  Show ao Vivo dos Forró Boys!
+                </p>
+                <a href="#ingressos" class=" btn btn-primary btn-rounded">
+                  Comprar agora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cover_item" style="background: url(&#x27;images/background-toro.jpg&#x27;);">
+        <div class="slider_content">
+          <div class="slider-content-inner">
+            <div class="container">
+              <div class="slider-content-center">
+                <h2 class="cover-title">
+                  Teremos de
+                </h2>
+                <strong class="cover-xl-text">TUDO</strong>
+                <p class="cover-date">
+                  Anote no seu calendário e não perca!
+                </p>
+                <a href="https://www.instagram.com/expoacrelandia/" class=" btn btn-primary btn-rounded">
+                  Acompanhar
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover_nav">
+      <ul class="cover_dots">
+        <li class="active" data="0"><span>1</span></li>
+        <li data="1"><span>2</span></li>
+        <li data="2"><span>3</span></li>
       </ul>
     </div>
+  </section>
 
-  </main>
+
+  <section class="pt100 pb100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-3  ">
+          <div class="icon_box_two">
+            <i class="ion-ios-calendar-outline"></i>
+            <div class="content">
+              <h5 class="box_title">
+                DATA
+              </h5>
+              <p>
+                29 e 30 de Junho -
+                01 e 02 de Julho
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3  ">
+          <div class="icon_box_two">
+            <i class="ion-ios-location-outline"></i>
+            <div class="content">
+              <h5 class="box_title">
+                Localização
+              </h5>
+              <p>
+                Em breve
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-img pt70 pb70" style="background-image: url(&#x27;images/bg-img.png&#x27;);">
+    <div class="overlay_dark"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <h4 class="mb30 text-center color-light">Contador até o primeiro dia do evento!</h4>
+          <div class="countdown"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pt100 pb100">
+    <div class="container">
+      <div class="section_title">
+        <h3 class="title">
+          Sobre o evento
+        </h3>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <p>
+            Bem-vindos à Expo Acrelândia 2023, um evento grandioso que promete ser uma experiência única e empolgante
+            para todos os participantes! Celebrando o espírito empreendedor e a riqueza cultural do Acrelândia, este
+            evento promete conectividade, inovação e oportunidades sem igual.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <p>
+            A diversão estará garantida com uma variedade de atividades para todas as idades. Desde áreas de
+            entretenimento para crianças até shows ao vivo com artistas renomados, a Expo Acrelândia 2023 oferecerá
+            momentos inesquecíveis para os visitantes. A gastronomia local será celebrada com uma feira de alimentos e
+            bebidas, permitindo que os participantes experimentem os sabores autênticos do Acrelândia.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt30">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-mic"></i>
+            <div class="content">
+              <h4>Shows ao vivo!</h4>
+              <p>
+                Conte com Ronei Viola, Thais Silva e os Forró Boys para animar esse grande evento!
+              </p>
+              <a href="https://www.instagram.com/expoacrelandia/">Ver Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-rocket"></i>
+            <div class="content">
+              <h4>O dia inteiro!</h4>
+              <p>
+                Na nossa incrível programação, é garantido que a todo momento terá algo acontecendo!
+              </p>
+              <a href="https://www.instagram.com/expoacrelandia/">Ver Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-bullhorn"></i>
+            <div class="content">
+              <h4>Palestras</h4>
+              <p>
+                Falaremos sobre empreendedorismo e inovação, com palestrantes de diversos locais.
+              </p>
+              <a href="https://www.instagram.com/expoacrelandia/">Ver Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="icon_box_one">
+            <i class="lnr lnr-clock"></i>
+            <div class="content">
+              <h4>E muito mais!</h4>
+              <p>
+                Então adiante e fique ligado no nosso Instagram para não perder nada!
+              </p>
+              <a href="https://www.instagram.com/expoacrelandia/">Ler Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pb100" id="concurso-rainha">
+    <div class="container">
+      <div class="section_title mb50">
+        <h3 class="title">
+          Concurso Rainha do Rodeio
+        </h3>
+      </div>
+    </div>
+    <div class="row justify-content-center no-gutters">
+      <div class="col-md-3 col-sm-6">
+        <div class="speaker_box">
+          <div class="speaker_img">
+            <img src="images/rainha.png" alt="Paola Eliomara">
+            <div class="info_box">
+              <h5 class="name">Paola Eliomara</h5>
+              <p class="position">Rainha</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="speaker_box">
+          <div class="speaker_img">
+            <img src="images/princesa.jpg" alt="Romilla Estefany">
+            <div class="info_box">
+              <h5 class="name">Romilla Estefany</h5>
+              <p class="position">Princesa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="speaker_box">
+          <div class="speaker_img">
+            <img src="images/madrinha.jpg" alt="Ana Paula">
+            <div class="info_box">
+              <h5 class="name">Ana Paula</h5>
+              <p class="position">Madrinha</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+  <section class="pb100" id="cantores">
+    <div class="container">
+      <div class="section_title mb50">
+        <h3 class="title">
+          Nossos Cantores
+        </h3>
+      </div>
+    </div>
+    <div class="row justify-content-center no-gutters">
+      <div class="col-md-3 col-sm-6">
+        <div class="speaker_box">
+          <div class="speaker_img">
+            <img
+              src="https://yt3.googleusercontent.com/rVYXpnHFTVHnam1jBUZ7v5ObVwUhWCirEpyi_lgtVSXGuIRh2OnFGF7NhiJoRY7HzzAUb0vt=s900-c-k-c0x00ffffff-no-rj"
+              alt="speaker name">
+            <div class="info_box">
+              <h5 class="name">Forró Boys</h5>
+              <p class="position">Banda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="speaker_box">
+          <div class="speaker_img">
+            <img src="images/ronei.png" alt="speaker name">
+            <div class="info_box">
+              <h5 class="name">Ronei Viola</h5>
+              <p class="position">Cantor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="speaker_box">
+          <div class="speaker_img">
+            <img src="images/thais.png" alt="speaker name">
+            <div class="info_box">
+              <h5 class="name">Thais Silva</h5>
+              <p class="position">Cantora</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <section class="pb100">
+    <div class="container">
+      <div class="table-responsive">
+        <table class="event_calender table">
+          <thead class="event_title">
+            <tr>
+              <th>
+                <i class="ion-ios-calendar-outline"></i>
+                <span>Programação</span>
+              </th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="programacaoTable">
+            <tr>
+              <!--
+              <td>
+                <img src="images/logo-background.png" alt="event">
+              </td>
+              <td class="event_date">
+                29
+                <span>Junho</span>
+              </td>
+              <td>
+                <div class="event_place">
+                  <h5>Abertura da Exposição e Praça de Alimentação</h5>
+                  <h6>18:00h</h6>
+                </div>
+              </td>
+              <td>
+
+                <a href="#" class="btn btn-primary btn-rounded">Mais info</a>
+
+              </td>
+              <td class="buy_link">
+
+                <a href="#ingressos">Comprar Agora</a>
+
+              </td>
+              -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <section class="bg-gray pt100 pb100">
+    <div class="container">
+      <div class="section_title mb50">
+        <h3 class="title">
+          Parceiros
+        </h3>
+      </div>
+      <div class="brand_carousel owl-carousel">
+        <div class="brand_item text-center">
+          <img src="images/b1.png" alt="brand">
+        </div>
+        <div class="brand_item text-center">
+          <img src="images/b2.png" alt="brand">
+        </div>
+        <div class="brand_item text-center">
+          <img src="images/b3.png" alt="brand">
+        </div>
+        <div class="brand_item text-center">
+          <img src="images/b4.png" alt="brand">
+        </div>
+        <div class="brand_item text-center">
+          <img src="images/b5.png" alt="brand">
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+
+  <section class="bg-img pt100 pb100" style="background-image: url(&#x27;images/tickets.png&#x27;);" id="ingressos">
+    <div class="container">
+      <div class="section_title mb30">
+        <h3 class="title color-light">
+          Compre seu ingresso
+        </h3>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-9 text-md-left text-center color-light">
+          Autorizados oficiais: <b>SAMUCA INFOCELL</b>, <b>ARMAZÉM PARAÍBA</b>
+        </div>
+        <div class="col-md-3 text-md-right text-center">
+          <a href="https://wa.me/+556899510093" class="btn btn-primary btn-rounded mt30">Samuca Infocell</a>
+          <a href="https://wa.me/+556892396471" class="btn btn-primary btn-rounded mt30">Armazém Paraíba</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <footer>
-    Marketing <a style="color:#0B6235" href="https://instagram.com/agencia.genios">Agência Gênios</a> &copy; 2023
-    ExpoAcrelândia. Todos os direitos reservados.
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-12">
+          <div class="footer_box">
+            <div class="footer_header">
+              <div class="footer_logo">
+                <img src="images/logo.png" alt="evento">
+              </div>
+            </div>
+            <div class="footer_box_body">
+              <p>
+                Grande evento em Acrelândia, diversas apresentações, shows, rodeios, palestras e muito mais!
+              </p>
+              <ul class="footer_social">
+                <li>
+                  <a href="https://www.instagram.com/expoacrelandia/"><i class="ion-social-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="footer_box">
+            <div class="footer_header">
+              <h4 class="footer_title">
+                instagram
+              </h4>
+            </div>
+            <div class="footer_box_body">
+              <ul class="instagram_list">
+                <li>
+                  <a href="#">
+                    <img src="images/logo-background.png" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/logo-background.png" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/logo-background.png" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/logo-background.png" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/logo-background.png" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/logo-background.png" alt="instagram">
+                  </a>
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="col-12 col-md-4">
+          <div class="footer_box">
+            <div class="footer_header">
+              <h4 class="footer_title">
+                subscribe to our newsletter
+              </h4>
+            </div>
+            <div class="footer_box_body">
+              <div class="newsletter_form">
+                <input type="email" class="form-control" placeholder="E-Mail here">
+                <button class="btn btn-rounded btn-block btn-primary">SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
   </footer>
+  <div class="copyright_footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-12">
+          <p>
+            Copyright Expoacrelândia © Agência Gênios
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | <a
+              href="https://colorlib.com" target="_blank">Colorlib</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-6 ">
+          <ul class="footer_menu">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Speakers</a>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/parallax.min.js"></script>
+
+  <script src="js/jquery.counterup.min.js"></script>
+
+  <script src="js/jquery.countdown.min.js"></script>
+
+  <script src="js/wow.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    // Array com os dados dos eventos
+    const eventos = [
+      {
+        imagem: "images/logo-background.png",
+        dia: 29,
+        mes: "Junho",
+        titulo: "Abertura da EXPOSIÇÂO e Praça de Alimentação",
+        horario: "18:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 29,
+        mes: "Junho",
+        titulo: "Abertura do Rodeio",
+        horario: "20:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Abertura Solene Oficial",
+        horario: "9:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "SESI – Lançamento da Telemedicina, parceria com Sindicato Patronal",
+        horario: "13:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Abertura do Painel do Leite – Atualização em Pecuária de Leite",
+        horario: "13:30h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Produção de leite à pasto de forma intensiva – Prof. Dr. Eduardo Mitke - UFAC",
+        horario: "14:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Boas práticas para a qualidade do leite – Prof. Dr. Cassio Messias - UFAC",
+        horario: "14:45h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Alimentação de vacas leiteiras – Ms Daniel M. Lambertucci - EMBRAPA",
+        horario: "15:45h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Debate",
+        horario: "16:30h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Sexta do Boi – Leilão no Barracão da ASPMA",
+        horario: "18:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Liberação de crédito e Apresentação de Linhas de Créditos - Banco do Brasil",
+        horario: "18:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Rodeio",
+        horario: "20:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 30,
+        mes: "Junho",
+        titulo: "Show ao vivo e de graça com Ronei Viola",
+        horario: "23:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 1,
+        mes: "Julho",
+        titulo: "SICREDI – Palestra Educação Financeira",
+        horario: "8:30h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 1,
+        mes: "Julho",
+        titulo: "O que o empreendedorismo pode te proporcionar? Do seringal para o mundo!",
+        horario: "10:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 1,
+        mes: "Julho",
+        titulo: "SICREDI – Palestra Educação Financeira",
+        horario: "13:30h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 1,
+        mes: "Julho",
+        titulo: "Maquiagem Pele Perfeita com Mary Kay",
+        horario: "15:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 1,
+        mes: "Julho",
+        titulo: "Liberação de crédito e Apresentação de Linhas de Créditos - Banco BASA",
+        horario: "18:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 1,
+        mes: "Julho",
+        titulo: "Rodeio",
+        horario: "20:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 1,
+        mes: "Julho",
+        titulo: "Show ao vivo e de graça com Thais Silva",
+        horario: "23:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 2,
+        mes: "Julho",
+        titulo: "Final do Rodeio",
+        horario: "20:00h",
+        linkInfo: "",
+        linkCompra: ""
+      },
+      {
+        imagem: "images/logo-background.png",
+        dia: 2,
+        mes: "Julho",
+        titulo: "Show do Forró Boys",
+        horario: "23:00h",
+        linkInfo: "",
+        linkCompra: "#ingressos"
+      }
+    ];
+
+    function adicionarItensTabela() {
+      const tbody = document.getElementById('programacaoTable');
+
+      for (let i = 0; i < eventos.length; i++) {
+        const evento = eventos[i];
+
+        const tr = document.createElement('tr');
+        const td1 = document.createElement('td');
+        const img = document.createElement('img');
+        const td2 = document.createElement('td');
+        const span = document.createElement('span');
+        const td3 = document.createElement('td');
+        const div = document.createElement('div');
+        const h5 = document.createElement('h5');
+        const h6 = document.createElement('h6');
+        const td4 = document.createElement('td');
+        const linkInfo = document.createElement('a');
+        const td5 = document.createElement('td');
+        const linkCompra = document.createElement('a');
+
+        img.src = evento.imagem;
+        img.alt = "event";
+
+        td1.appendChild(img);
+
+        td2.classList.add('event_date');
+        td2.textContent = evento.dia;
+        span.textContent = evento.mes;
+        td2.appendChild(span);
+
+        h5.textContent = evento.titulo;
+        h6.textContent = evento.horario;
+        div.classList.add('event_place');
+        div.appendChild(h5);
+        div.appendChild(h6);
+        td3.appendChild(div);
+
+        if (evento.linkInfo !== '') {
+          linkInfo.href = evento.linkInfo;
+          linkInfo.classList.add('btn', 'btn-primary', 'btn-rounded');
+          linkInfo.textContent = "Mais info";
+          td4.appendChild(linkInfo);
+        }
+
+
+        if (evento.linkCompra !== '') {
+          linkCompra.href = evento.linkCompra;
+          linkCompra.textContent = "Comprar Agora";
+          td5.classList.add('buy_link');
+          td5.appendChild(linkCompra);
+        }
+
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+
+        tbody.appendChild(tr);
+      }
+    }
+
+    adicionarItensTabela();
+
+  </script>
+
 </body>
 
 </html>
