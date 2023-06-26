@@ -4,28 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <link rel="icon" type="image/png" href="https://expoacrelandia.agenciagenios.com/images/logo-background.png">
   <title>Expo Acrelândia - Evento</title>
-  <meta name="description" content="Participe da Expo Acrelândia, o maior evento da região, com atrações de agro, tecnologia e muito mais.">
+  <meta name="description"
+    content="Participe da Expo Acrelândia, o maior evento da região, com atrações de agro, tecnologia e muito mais.">
   <meta name="keywords" content="expo, acrelândia, evento, agro, country, tech">
   <meta name="author" content="Agência Gênios & ColorLib">
-  
+
   <!-- Open Graph meta tags -->
   <meta property="og:title" content="Expo Acrelândia - Evento">
-  <meta property="og:description" content="Participe da Expo Acrelândia, o maior evento da região, com atrações de agro, tecnologia e muito mais.">
-  <meta property="og:image" content="https://expoacrelandia.agenciagenios.com/images/logo-background.png"> <!-- Replace with the actual image URL -->
+  <meta property="og:description"
+    content="Participe da Expo Acrelândia, o maior evento da região, com atrações de agro, tecnologia e muito mais.">
+  <meta property="og:image" content="https://expoacrelandia.agenciagenios.com/images/logo-background.png">
+  <!-- Replace with the actual image URL -->
   <meta property="og:url" content="https://expoacrelandia.agenciagenios.com"> <!-- Replace with the actual URL -->
   <meta property="og:type" content="website">
-  
+
   <!-- Twitter Card meta tags -->
   <meta name="twitter:title" content="Expo Acrelândia - Evento">
-  <meta name="twitter:description" content="Participe da Expo Acrelândia, o maior evento da região, com atrações de agro, tecnologia e muito mais.">
-  <meta name="twitter:image" content="https://expoacrelandia.agenciagenios.com/images/logo-background.png"> <!-- Replace with the actual image URL -->
+  <meta name="twitter:description"
+    content="Participe da Expo Acrelândia, o maior evento da região, com atrações de agro, tecnologia e muito mais.">
+  <meta name="twitter:image" content="https://expoacrelandia.agenciagenios.com/images/logo-background.png">
+  <!-- Replace with the actual image URL -->
   <meta name="twitter:card" content="summary_large_image">
-  
+
   <!-- other meta tags as needed -->
-  
+
   <!--LINKS-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -50,22 +55,10 @@
       "location": [
         {
           "@type": "Place",
-          "name": "Centro de Acrelândia",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Calçadão - CENTRO",
-            "addressLocality": "Acrelândia",
-            "addressRegion": "AC",
-            "postalCode": "69945-000",
-            "addressCountry": "Brasil"
-          }
-        },
-        {
-          "@type": "Place",
           "name": "ASPMA",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Endereço do ASPMA",
+            "streetAddress": "AC-475",
             "addressLocality": "Acrelândia",
             "addressRegion": "AC",
             "postalCode": "69945-000",
@@ -88,7 +81,7 @@
       }
     }
     </script>
-    
+
 </head>
 
 <body>
@@ -231,13 +224,11 @@
                 Localização
               </h5>
               <p>
-                Em breve
+                ASPMA
               </p>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
@@ -478,7 +469,7 @@
     </div>
   </section>
 
-  <!--
+
   <section class="bg-gray pt100 pb100">
     <div class="container">
       <div class="section_title mb50">
@@ -486,26 +477,11 @@
           Parceiros
         </h3>
       </div>
-      <div class="brand_carousel owl-carousel">
-        <div class="brand_item text-center">
-          <img src="images/b1.png" alt="brand">
-        </div>
-        <div class="brand_item text-center">
-          <img src="images/b2.png" alt="brand">
-        </div>
-        <div class="brand_item text-center">
-          <img src="images/b3.png" alt="brand">
-        </div>
-        <div class="brand_item text-center">
-          <img src="images/b4.png" alt="brand">
-        </div>
-        <div class="brand_item text-center">
-          <img src="images/b5.png" alt="brand">
-        </div>
+      <div class="brand_carousel owl-carousel" id="brandCarousel">
       </div>
     </div>
   </section>
-  -->
+
 
 
   <section class="bg-img pt100 pb100" style="background-image: url(&#x27;images/tickets.png&#x27;);" id="ingressos">
@@ -589,7 +565,7 @@
                     <img src="images/logo-background.png" alt="instagram">
                   </a>
                 </li>
-              
+
               </ul>
             </div>
           </div>
@@ -935,6 +911,24 @@
     }
 
     adicionarItensTabela();
+
+    //BRANDS
+
+    const directory = 'images/PATROCINIOS/';
+
+    const brandCarousel = document.getElementById('brandCarousel');
+
+    for (let i = 1; i < 45; i++) {
+      const imageSrc = directory + ' ('+ i + ')' + '.png';
+      const imageElement = document.createElement('img');
+      imageElement.src = imageSrc;
+      imageElement.alt = 'brand';
+      const brandItem = document.createElement('div');
+      brandItem.classList.add('brand_item');
+      brandItem.classList.add('text-center');
+      brandItem.appendChild(imageElement);
+      brandCarousel.appendChild(brandItem);
+    }
 
   </script>
 
