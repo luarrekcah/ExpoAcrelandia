@@ -10,7 +10,7 @@ $(window).load(function () {
           : $(".header").addClass("sticky_header");
       }),
       $(".counter").counterUp({ delay: 5, time: 3e3 }),
-      $(".countdown").countdown("2023/06/29", function (e) {
+      $(".countdown").countdown("2024/07/04", function (e) {
         $(this).html(
           e.strftime(
             "<div>%w <span>Semanas</span></div>  <div>%D <span>Dias</span></div>  <div>%H<span>Horas</span></div> <div>%M<span>Minutos</span></div> <div>%S<span>Segundos</span></div>"
