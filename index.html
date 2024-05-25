@@ -683,8 +683,10 @@
 
     const brandCarousel = document.getElementById('brandCarousel');
 
-    for (let i = 1; i < 45; i++) {
-      const imageSrc = "/images/em-breve.png" // directory + ' (' + i + ')' + '.png';
+    const qntImages = 19;
+
+    for (let i = 1; i < qntImages+1; i++) {
+      const imageSrc = directory + ' (' + i + ')' + '.png';
       const imageElement = document.createElement('img');
       imageElement.src = imageSrc;
       imageElement.alt = 'Parceiro';
